@@ -1,11 +1,13 @@
 body {
 	background-color: yellow;
-	margin: 5em;
+	margin: 5em; /* la propiété margin me permet de gérer les marges "extérieures" autour de mon élément. 
+	lien vers la documentation : https://developer.mozilla.org/fr/docs/Web/CSS/margin
+	*/
 }
 
 h1 {
 	color: #c30ac3;
-	font-size: 5em;
+	font-size: 5em;/* font-size est la propriété css qui me permet de changer la taille de la police */
 }
 
 h2 {
@@ -13,6 +15,7 @@ h2 {
 }
 
 p {
+	/* ici toutes ces règles css s'appliquent à tous les éléments html de type <p> soit tous les paragraphes */
 	margin: 2em 0;
     background: #003dff;
 	color: #fffb00;
@@ -20,7 +23,64 @@ p {
 	font-size: 1.2em;
 }
 
-#p-important{
+#p-important {
 	border: solid white 10px;
+	/* ici cette règle css s'applique à un élément html ayant un attribut de type id avec la valeur "p-important". En CSS quand je vise un attribut de type id, j'utilise le # pour le sélectionner */
 }
 
+.different {
+	text-transform: uppercase; /* cette propriété avec cette valeur permet d'afficher le texte en capitale */
+
+	/* ici cette règle css s'applique à un élément html ayant un attribut de type class avec la valeur "different". En CSS quand je vise un attribut de type class, j'utilise le . pour le sélectionner */
+}
+
+h3, h4 {
+	background-color: green; /* est la propriété qui me permet de changer la couleur de l'arrière plan de mon élément */
+	color: white; /* color est la propriété css qui me permet de changer la couleur de la police de mon texte */
+}
+
+
+/* Voici un commentaire en CSS */
+
+/* 
+
+La structure d'une règle CSS est la suivante : 
+
+selecteur {
+	propriété: valeur;
+}
+
+sélecteur : l'élément html que l'on cible, c'est-à-dire sur lequel on souhaite que des règles de style s'appliquent
+
+propriété : ce que l'on souhaite modifier
+
+valeur : de quelle manière on souhaite le modifier
+
+*/
+
+ol li {
+	font-style: italic;
+	/* Ici j'utilise un sélecteur dit descendant, lien vers le documentation : https://developer.mozilla.org/fr/docs/Web/CSS/Descendant_combinator */
+}
+
+article > p {
+	font-size: 50px;
+	color: tomato;
+	background-color: unset;
+	/* Ici j'utilise un sélecteur dit enfant, c'est-à-dire que je vise tous les paragrahes qui sont des enfants de l'élément html article
+	Lien vers la documentation : https://developer.mozilla.org/fr/docs/Web/CSS/Child_combinator
+	*/
+}
+
+h3 + p {
+	background-color: turquoise;
+	color: black;
+	/* Ici j'utilise un combinateur de voisin direct, lien vers la doc : https://developer.mozilla.org/fr/docs/Web/CSS/Adjacent_sibling_combinator 
+	Cela me permet de sélectionner le premier élément de type <p> voisin d'un <h3> 
+	*/
+}
+
+a:hover{
+	background-color: chartreuse;
+	/* Ici j'utilise une pseudo-class (hover) afin d'appliquer un style particulier au survol de la souris */
+}
