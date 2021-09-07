@@ -1,5 +1,5 @@
 body {
-	background: #34c30a;
+	background-color: yellow;
 	margin: 5em;
 }
 
@@ -14,8 +14,13 @@ h2 {
 
 p {
 	margin: 2em 0;
-  background: #003dff;
+    background: #003dff;
 	color: #fffb00;
 	font-style: italic;
 	font-size: 1.2em;
 }
+
+#p-important{
+	border: solid white 10px;
+}
+

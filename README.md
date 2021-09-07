@@ -34,7 +34,7 @@ Dans un des paragraphes, ajoutez un lien vers http://www.angelfire.com/super/bad
 
 Linker le fichier new-design.css à votre fichier index.html
 
-Créez des bordures bleues pour le deuxième paragraphe
+Créez des bordures blanches pour le deuxième paragraphe
 
 
 
